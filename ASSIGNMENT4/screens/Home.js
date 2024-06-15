@@ -25,8 +25,12 @@ const Homepage = () => {
         				<View style={styles.softwareEngineerParent}>
           					<Text style={[styles.softwareEngineer, styles.facebookPosition]}>Software Engineer</Text>
 							 <View style={styles.logoAndName}>
-								<Image style={styles.grommetIconsgoogle}
-								resizeMode="cover"source={require('../assets/fb.png')}></Image>
+							 <Image
+						 style={styles.grommetIconsgoogle}
+						  resizeMode="cover"  
+						 source={require('../assets/google.png')}
+						   />
+						 
 
 							  </View>
           					<Text style={[styles.facebook, styles.googleTypo]}>Facebook</Text>
@@ -401,7 +405,7 @@ const styles = StyleSheet.create({
     		letterSpacing: -0.1
   	},
   	groupChild: {
-    		width: 46,
+    		width: 45,
     		backgroundColor: "#fff",
     		borderRadius: 12,
     		height: 46
