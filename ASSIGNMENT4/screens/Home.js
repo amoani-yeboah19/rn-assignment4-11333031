@@ -17,29 +17,20 @@ const Homepage = () => {
       			<ScrollView horizontal showsHorizontalScrollIndicator={false}
 				contentContainerStyle={styles.featuredJobsScrollView}></ScrollView>
 				 
-      			<View style={styles.groupParent}>
-        				<View style={styles.accraGhanaParent}>
-          					<Text style={[styles.accraGhana, styles.textTypo]}>Accra, Ghana</Text>
-          					<Text style={[styles.text, styles.textTypo]}>$180,00</Text>
-        				</View>
-        				<View style={styles.softwareEngineerParent}>
-          					<Text style={[styles.softwareEngineer, styles.facebookPosition]}>Software Engineer</Text>
-							 <View style={styles.logoAndName}>
-							 <Image
-						 style={styles.grommetIconsgoogle}
-						  resizeMode="cover"  
-						 source={require('../assets/google.png')}
-						   />
-						 
-
-							  </View>
-          					<Text style={[styles.facebook, styles.googleTypo]}>Facebook</Text>
-							
-
-          					<View style={[styles.groupChild, styles.groupChildPosition]} />
-        				</View>
-        				<View style={styles.bookmark5} />
-      			</View>
+				 <View style={styles.groupParent}>
+       	 <View style={styles.accraGhanaParent}>
+          <Text style={[styles.accraGhana, styles.textTypo]}>Accra, Ghana</Text>
+          <Text style={[styles.text, styles.textTypo]}>$180,00</Text>
+        </View>
+        <View style={styles.softwareEngineerParent}>
+          <Text style={[styles.softwareEngineer, styles.facebookPosition]}>Software Engineer</Text>
+          <View style={styles.groupChild}>
+            <Image style={styles.grommetIcons} resizeMode="cover" source={require('../assets/fb.png')} />
+          </View>
+          <Text style={[styles.facebook, styles.googleTypo]}>Facebook</Text>
+        </View>
+        <View style={styles.bookmark5} />
+     	 </View>
       			<Text style={styles.popularJobs}>Popular Jobs</Text>
       			<Text style={styles.seeAll1}>See all</Text>
       			<View style={styles.statusBarIphoneXOrNewe}>
@@ -410,6 +401,15 @@ const styles = StyleSheet.create({
     		borderRadius: 12,
     		height: 46
   	},
+	  grommetIcons: {
+		width: 22,
+		height: 22,
+		position: "absolute",
+		justifyContent: 'center',
+		alignItems:'center',
+		left:10,
+		top:10
+	  },
   	softwareEngineerParent: {
     		width: 207,
     		height: 47,

@@ -16,5 +16,5 @@ This project is a React Native application with a login screen that passes the n
 
 
 ## Screenshots
-(![LoginSCreen](<screenshot (2).jpeg>))
-![Home Screen](path/to/home_screen.png)
+![Login](shot1.jpeg)
+![Homescreen](shot2.jpeg)
